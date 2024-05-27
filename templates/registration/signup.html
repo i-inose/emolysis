@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1>サインアップ</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">サインアップ</button>
+    </form>
+    <p>すでにアカウントをお持ちですか？<a href="{% url 'login' %}">ここからログイン</a></p>
+</body>
+</html>

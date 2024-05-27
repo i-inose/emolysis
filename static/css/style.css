@@ -1,0 +1,61 @@
+/* style.css */
+
+body {
+	background-color: gainsboro;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+/* フォームのスタイル */
+form {
+	width: 300px;
+	margin: 0 auto;
+}
+
+/* ラベルのスタイル */
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* 入力フィールドのスタイル */
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+/* 分析ボタンのスタイル */
+button#analysis {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: black;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#logged_out {
+	text-align: center;
+}
+
+/* ログアウトリンクのスタイル */
+#logged_out button {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: whitesmoke;
+	color: #333;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}

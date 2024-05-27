@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>テキスト感情分析</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>テキストから感情分析ツール</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button id="analysis" type="submit">分析する</button>
+    </form>
+		<div id="logged_out">
+			<a href="{% url 'logout' %}">
+				<button>ログアウト</button>
+			</a>
+		</div>
+</body>
+</html>
